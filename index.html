@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="./Css/styles.css">
+  <title>VinoteKa</title>
+</head>
+
+<body>
+  <!-- SECCION NAVBAR -->
+  <nav>
+    <div class="logos">
+      <img class="logo" src="./Assets/18.png" alt="">
+
+    </div>
+
+    <div class="div-title">
+      <h1 class="title text-flicker-in-glow">Tu<span class="title2"> VinoteKa</span></h1>
+    </div>
+    <div class="categories">
+      <a href="#products-Malbec">Malbec </a>
+      <a href="#products-Cabernet">Cabernet </a>
+      <div class="carrito-container">
+        <div class="circle">
+        </div>
+        <p class="carrito">🛒</p>
+      </div>
+    </div>
+  </nav>
+  <!-- SECCION DEL CARRITO -->
+  <section class="carrito-window">
+    <div class="carrito-visible">
+      <p>Vinoteka Tienda</p>
+      <p>Tu carrito esta vacio</p>
+    </div>
+    <!-- TEMPLATE DEL CARRITO -->
+    <template id="template-carrito">
+      <div class="flex">
+        <p class="id"></p>
+        <div class="div-main-img">
+          <img class="main-img-carrito" src="" alt="">
+        </div>
+        <div class="div-title-carrito">
+          <p class="title-carrito"></p>
+        </div>
+        <div class="buttons">
+          <p class="up">🔺</p>
+          <p class="mid-p"></p>
+          <p class="down">🔻</p>
+        </div>
+        <p class="price"></p>
+        <p class="sub-price"></p>
+        <img src="" alt="" class="delete">
+      </div>
+    </template>
+  </section>
+  <!-- VIÑEDO IMG -->
+  <div class="viña">
+    <img src="./Assets/home_VINA1920x500.jpg" alt="">
+  </div>
+  <!-- SECCION INGRESOS SLIDER -->
+  <section class="news">
+    <h2 class="title-news">Nuestra mejor Seleccion</h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://vinotecaligier.com/media/catalog/product/cache/98d3e2af1d4ebc2ba18bbd79978e0c99/b/e/be73767_base.jpg" alt=""> </div>
+        <div class="swiper-slide "><img src="https://vinotecaligier.com/media/catalog/product/cache/98d3e2af1d4ebc2ba18bbd79978e0c99/b/e/be73660_base.jpg" alt=""></div>
+        <div class="swiper-slide "><img src="https://vinotecaligier.com/media/catalog/product/cache/98d3e2af1d4ebc2ba18bbd79978e0c99/b/e/be75741_base.jpg" alt=""></div>
+        <div class="swiper-slide "><img src="https://vinotecaligier.com/media/catalog/product/cache/98d3e2af1d4ebc2ba18bbd79978e0c99/b/e/be75846_base.jpg" alt=""></div>
+        <div class="swiper-slide "><img src="https://vinotecaligier.com/media/catalog/product/cache/98d3e2af1d4ebc2ba18bbd79978e0c99/b/e/be73119_base.jpg"alt=""></div>
+        <div class="swiper-slide "><img src="https://vinotecaligier.com/media/catalog/product/cache/98d3e2af1d4ebc2ba18bbd79978e0c99/b/e/be71713_base.jpg"alt=""></div>
+        <div class="swiper-slide "><img src="https://vinotecaligier.com/media/catalog/product/cache/98d3e2af1d4ebc2ba18bbd79978e0c99/b/e/be72711_itgibd8iqpfmeuua.jpg" alt=""></div>
+        <div class="swiper-slide "><img src="https://vinotecaligier.com/media/catalog/product/cache/98d3e2af1d4ebc2ba18bbd79978e0c99/b/e/be03806_base.jpg" alt=""></div>
+      </div>
+      <div class="swiper-pagination "></div>
+    </div>
+  </section>
+  <!-- SECCION OFERTA -->
+  <section class="offer">
+    <div class="offer-img">
+      <img src="./Assets/caja para vinos.png" alt="">
+    </div>
+    <div class="offer-text">
+      <h3>Con la compro de un vino mayor a $25.000 pesos recibis una caja porta vinos de regalo</h3>
+    </div>
+  </section>
+  <!-- SECCION PRODUCTOS MALBEC-->
+  <section id="products-Malbec">
+    <h2 class="title-products">Catalogo de Vinos Malbec</h2>
+    <div class="products-Malbec">
+      <!-- TEMPLATE DE CADA PRODUCTO -->
+      <template id="template-card">
+        <div class="card">
+          <img class="main-img" src="" alt="">
+          <div class="back">
+            <img class="sec-img" src="" alt="">
+            <pre></pre>
+          </div>
+          <p class="title-card">titulo</p>
+          <p class="price-card">precio</p>
+          <button>Agregar 🛒</button>
+        </div>
+    </div>
+    </template>
+  </section>
+  <!-- SECCION PRODUCTOS CABERNET-->
+  <section id="products-Cabernet">
+    <h2 class="title-products title-products-Cabernet">Cabernet </h2>
+    <div class="products-Cabernet">
+      <!-- TEMPLATE DE CADA PRODUCTO -->
+      <template id="template-card">
+        <div class="card">
+          <img class="main-img" src="" alt="">
+          <div class="back">
+            <img class="sec-img" src="" alt="">
+            <pre></pre>
+          </div>
+          <p class="title-card">titulo</p>
+          <p class="price-card">precio</p>
+          <button>Agregar 🛒</button>
+        </div>
+    </div>
+    </template>
+  </section>
+  <!-- VENTANA MODAL  -->
+  <div class="modal-container visible">
+    <div class="modal">
+      <img class="main-img-modal" src="" alt="">
+      <p class="msg-modal"></p>
+      <p class="title-modal"></p>
+      <img class="accept" src="./Assets/accept-check-good-mark-ok-tick-svgrepo-com.svg" alt="">
+    </div>
+  </div>
+  <!-- VENTANA MODAL TIENE PRODUCTOS EN SU CARRITO -->
+  <div class="modal-container visible modal-cart">
+    <div class="modal">
+      <h2 class="red-p">Tenes productos guardados en tu carrito</h2>
+      <h2 class="red-p">Echale un ojo!</h2>
+      <img class="red-cart" src="./Assets/cart-go-svgrepo-com.svg" alt="">
+    </div>
+  </div>
+  <!-- FOOTER -->
+  <footer>
+    <p>Tenes alguna pregunta?</p>
+    <p>Contactanos</p>
+    <div class="social">
+      <a href=""><img src="./Assets/facebook-svgrepo-com(1).svg" alt=""></a>
+      <a href=""><img src="./Assets/instagram-svgrepo-com(1).svg" alt=""></a>
+      <a href=""><img src="./Assets/whatsapp-svgrepo-com(1).svg" alt=""></a>
+    </div>
+    <p class="copy">©Guillermo Repetto</p>
+  </footer>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="./Js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./Css/stylePagos.css">
+  <title>Payment Methods</title>
+
+
+</head>
+
+<body>
+  <!-- LOADER -->
+  <div class="loader ">
+    <div class="loadingio-spinner-spinner-3e13545mrco width">
+      <div class="ldio-yuzh5f3jbun">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <p>PROCESANDO PAGO</p>
+  </div>
+  <!-- MAIN DIVIDIDO EN 2 SECCIONES -->
+  <main class="container">
+    <!-- SECCION DEL CARRITO -->
+    <section class="carrito-window">
+      <section class="payment-methods">
+        <img src="./Assets/mastercard-svgrepo-com.svg" alt="">
+        <img src="./Assets/visa-svgrepo-com.svg" alt="">
+      </section>
+      <h1>Detalles de la compra</h1>
+      <!-- TEMPLATE DE CADA PRODUCTO -->
+      <template id="template-carrito">
+        <div class="products">
+          <div class="div-separator flex">
+            <img src="" alt="" class="img">
+          </div>
+          <div class="div-separator flex">
+            <p class="title">Viña Los Delirios Linea Oak Malbec</p>
+          </div>
+          <div class="div-separator flex">
+            <p class="items">cantidad 5</p>
+          </div>
+          <div class="div-separator flex">
+            <p class="price">precio 2000</p>
+          </div>
+        </div>
+      </template>
+    </section>
+    <!-- SECCION DEL FORMULARIO -->
+    <section class="form-container">
+      <div class="front-card">
+        <div class="div-logo">
+          <img src="./Assets/chip-tarjeta.png" alt="" class="card-logo">
+        </div>
+        <p class="card-number">0000 0000 0000 0000</p>
+        <div class="details">
+          <p class="details-name">XXXXXXX</p>
+          <div class="d-flex">
+            <p class="details-month">00</p>
+            <p class="details-year">/00</p>
+          </div>
+        </div>
+      </div>
+      <div class="back-card">
+        <p class="card-code">000</p>
+      </div>
+      <form class="form" action="">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" placeholder="Juan Gomez" autocomplete="off" class="form-input">
+        <div class="name-error error"></div>
+        <label for="number">Numero de tarjeta</label>
+        <input type="text" id="number" name="number" placeholder="1234 5678 9123 0000" maxlength="19" autocomplete="off"
+          class="form-input">
+        <div class="number-error error"></div>
+        <div class="form-date">
+          <label for="">Exp. MM/YY</label>
+          <label for="">CVC</label>
+          <div class="d-flex">
+            <input type="text" id="months" name="months" placeholder="MM" maxlength="2" autocomplete="off"
+              class="form-input width">
+            <input type="text" id="year" name="year" placeholder="YY" maxlength="2" autocomplete="off"
+              class="form-input width">
+          </div>
+          <input type="text" id="cvc" name="cvc" placeholder="123" maxlength="3" autocomplete="off" class="form-input">
+          <div class="form-errors">
+            <div class="months-errors error"></div>
+            <div class="year-errors error"></div>
+          </div>
+          <div class="cvc-errors error"></div>
+        </div>
+        <input type="submit" value="Confirmar" class="form-input submit">
+      </form>
+      <!-- MENSAJE DE PAGO EXITOSO -->
+      <div class="pay-completed display">
+        <img src="./Assets/accept-check-good-mark-ok-tick-svgrepo-com.svg" alt="">
+        <p>Pago realizado exitosamente</p>
+        <p>Gracias por su compra!</p>
+        <a href="./index.html">Continuar</a>
+      </div>
+      <!-- SEGUNDO LOADER -->
+      <div class="loader2 display">
+        <div class="loadingio-spinner-spinner-1cqrqg0k0ws">
+          <div class="ldio-xbph0kgievg">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="./Js/scriptPagos.js"></script>
+</body>
+
+</html>
