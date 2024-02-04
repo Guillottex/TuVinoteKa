@@ -7,7 +7,7 @@ html {
   box-sizing: inherit;
   padding: 0;
   margin: 0;
-  font-family: "Goldman", cursive;
+  font-family: "Permanent Marker", cursive;
   scroll-behavior: smooth;
 }
 
@@ -16,6 +16,7 @@ html {
   --secondary: #fff;
   --black: #800040;
 }
+
 
 /*NAVDELAPAGINA///////////////////////////////////////////////////////////////////////////////////*/
 nav {
@@ -169,8 +170,7 @@ nav {
   text-align: center;
 }
 
-.price,
-.sub-price {
+.price,.sub-price {
   font-size: 1rem;
   text-align: center;
   padding: 1rem;
