@@ -49,7 +49,7 @@
   },
   {
     "id": 6,
-    "nombre": "D.v.catena 750",
+    "nombre": "D.V.catena 750",
     "precio": 67300,
     "imagen": "https://vinotecaligier.com/media/catalog/product/cache/98d3e2af1d4ebc2ba18bbd79978e0c99/b/e/be54944_base.jpg",
     "info": "Año\n2016\n\nMarca\nD.v.catena\n\nPaís Origen\n Argentina\n \n Familia\n Tintos",    
@@ -57,10 +57,11 @@
   },
   {
     "id": 7,
+    "nombre": " ",
     "nombre": "D.v. Catena 750",
     "precio": 19700,
     "imagen": "https://vinotecaligier.com/media/catalog/product/cache/98d3e2af1d4ebc2ba18bbd79978e0c99/b/e/be02876_base.jpg",
-    "info": "Año\n2019\n\nMarca\nD.v. Catena\n\nPaís Origen\n Argentina\n \n Familia\n Tintos",    
+    "info": "Año\n2019\n\nMarca\nD.V. Catena\n\nPaís Origen\n Argentina\n \n Familia\n Tintos",    
     "consola": "Malbec"
   },
   {
