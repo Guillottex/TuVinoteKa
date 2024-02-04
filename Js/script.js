@@ -236,7 +236,7 @@ let removeProduct = (obj, carrito, ventana) => {
         $divContador.classList.remove("active");
         $carritoWindow.innerHTML = `<div class="carrito-visible">
       <p>VinoteKa</p>
-      <p>Tu carrito esta vacio</p>
+      <p>Tu carrito esta vacío</p>
     </div>`;
       } else {
         $divContador.textContent = contador;
