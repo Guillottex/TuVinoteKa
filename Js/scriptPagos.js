@@ -270,7 +270,7 @@ $btnConfirm.addEventListener("click", (e) => {
   //VALIDANDO QUE EL INPUT DEL AÑO NO ESTE VACIO
   if (emptyInput($divYearError, $yearInput)) {
     //VALIDO QUE LA TARJETA ESTE EN EL RANGO DE 5 AÑOS
-    if ($yearInput.value >= 22 && $yearInput.value <= 27) {
+    if ($yearInput.value >= 24 && $yearInput.value <= 34) {
       showError($divYearError, $yearInput, "", false);
       yearValidate = true;
     } else {
